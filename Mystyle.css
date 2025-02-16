@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+:root
+{
+  --text-color:black;
+  --main-color: yellow;
+  --h1-font:6rem;
+  --h2-font:3rem;
+  --p-font:1rem;
+}
+body
+{
+color: var(--text-color);
+background-color:white;
+margin: 0px;
+}
+#name
+{
+    text-transform: uppercase;
+    letter-spacing: 3px;    
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.section1
+{
+background-image: linear-gradient(to left, rgba(1,1,1,0.2), rgba(1,1,1,0.9)),url(construction.jpg), url("constr_port_1.jpg");
+background-repeat: no-repeat , no-repeat;
+background-position: center, top-left; 
+width: 100%;
+height:100vh;
+
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    color:white;
+    font-weight: 800;
+    flex-basis: 10%;    
+       
+}
+.box
+{
+    position: sticky;
+    top: 0; 
+    border:3px solid white;
+    width:80%;
+    height: 10vh;
+    margin-left: 170px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;  
+}
+ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+li{
+    text-align: center;
+    align-items: center;
+    padding:15px;
+    color:black;
+    list-style: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+i{
+    display: flex;
+    padding: 5px;
+}
+.content
+{
+   text-align: center;
+   color:whitesmoke;
+   padding:6em;
+   letter-spacing: 10px;
+   font-weight: 900;
+}
+#h3
+{
+    padding: 5px;
+text-align: center;
+}
+#h1
+{
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+.button1
+{
+    letter-spacing: 0px;
+    border:2px solid black;
+    align-items: center;
+    width: 20%;
+    padding:25px;
+    text-align: center;
+    margin-left: 41%;
+    border-radius: 30px;
+    background-color: black;
+    padding: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+.button1:hover{
+    letter-spacing: 2px;
+    transform: scale(1.08);
+}
+.section2a
+{
+    display: flex;
+    margin: 10% 3%;
+    align-items: center;
+    gap: 25px;
+}
+.section2a p
+{
+color: gray;
+}
+.section2a h3
+{
+color: 2px solid black;
+}
+.section3
+{
+    display: grid;
+    grid-template-columns: auto auto;
+   justify-content: space-around;
+   align-items: center;
+   padding: 15px;
+   letter-spacing: 2px;
+}
+.image1 img
+ {
+        position: relative;
+        left: -75px;
+        opacity: -2;
+        transition: all 0.5s ease-in-out;
+}
+.section3:hover .image1 img{
+    left: 45px;
+    opacity: 1;
+    
+}
+.imagesnav
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    align-items: center;
+    text-align: start;
+
+}
+.images
+{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 5%;
+}
+.image-a
+{
+   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image-a img{
+   
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-a:hover img{
+    transform: scale(1.2);
+}
+.scroller
+{
+    background-image: linear-gradient( rgba(208, 96, 4, 0.3), #af6407e6),url(constr_port_5.jpg);
+    width: 100%;
+    height: 80vh;
+    margin-top: 5%;
+    background-position: center;
+}
+.scroller-a
+{
+text-align: center;
+color: white;
+align-items: center;
+}
+.scroller-a h4
+{
+    padding: 55px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.scroller-a h1
+{
+  font-size: xx-large;
+  font-weight: 900;
+  line-height: 15%;
+  letter-spacing: 3px;
+}
+
+.scroller-b
+{
+ text-align: center;
+color: whitesmoke;
+display: flex;
+padding: 10px;
+align-items: center;
+justify-content: space-evenly;
+}
+.scroller-b h2{
+    margin-top: 11%;
+}
+.scrollnum
+{
+   padding: 15px;
+   font-weight: 900;
+   letter-spacing: 2px;
+   font-size: 100px; 
+   animation: scrollUp 2s ease-in-out forwards;
+}
+.boxes
+{
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    
+}
+.box-a
+{
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ --bg-filter-opacity: 0.50;
+ background-image: linear-gradient(0,0,0,1);
+ width: 25%;
+ height: 80vh;
+ background-size: cover;
+ background-position: center;
+align-items: flex-end;
+overflow: hidden;
+text-decoration: none;
+box-shadow:  0 0 15em -1em black;
+transition: all 0.50 ease;
+border: 5px solid whitesmoke;
+margin: 2em;
+position: relative;
+color: white;
+text-align: center;
+overflow: hidden;
+padding: 10px;
+font-size: 1em;
+border-radius: 1em;
+transition: all 1s;
+}
+.box-a:hover{
+    transform: rotate( -5deg);
+}
+
+.box-a h1{
+    margin-top: 8em;
+    overflow: auto;
+    color: orange;
+}
+.box-a p{
+    padding: 5px;
+    color: black;
+}
+.box-a:before, .box-a:after
+{
+    content:'';
+    transform: scale(0);
+    transform-origin: top right;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top:-50%;
+    z-index: -5;
+    transition: all 0.50s;
+    transition-timing-function: ease-in-out;
+}
+.box-a:before
+{
+    background: blue;
+    width: 250%;
+    height: 250%;
+}
+.box-a:after {
+    background: whitesmoke;
+    width: 200%;
+    height: 200%;
+  }
+  .box-a:hover:before, .box-a:hover:after {
+    transform: scale(1);
+  }
+.contact
+{
+background-color: white;
+margin-top:10%;
+margin-left: 9em;
+display: grid;
+grid-template-columns: auto auto;
+border:2px whitesmoke;
+height: 100vh;
+width: 80%;
+margin-bottom: 25px;
+box-shadow:  0px 0px 6px 10px whitesmoke;
+
+justify-content: space-between;
+}
+.ca
+{
+    display: flex;
+    padding: 2em;
+    gap: 25px       ;
+}
+span{
+    font-size: large;
+    font-weight: 300;
+    color: gray;
+}
+
+.details
+{
+    padding: 3rem;
+}
+.details input
+{
+    border-radius: 5px;
+}
+.details h3
+{
+    padding: 1em;
+}
+.button2
+{
+    border: 2px solid black;
+    width: 20%;
+    text-align: center;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+     margin-left: 3em;
+     margin-bottom: 5em;
+     transition: all 0.5s ease;
+     cursor: pointer;
+
+}
+.button2:hover{
+    transform: scale(1.10);
+    color: orange;
+}
+
+  
+  .footers {
+    background-color: black;
+    color: #fefefe;
+    width: 100%;
+    margin-top: 8em;   
+  }
+  
+  .footer .headings {
+    color: #fefefe;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footers .contents {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footers .contents p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footers .contents a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footers .contents a:hover {
+    border-bottom: 1px solid white;
+  }
+  
+  .footers .contents h4 {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footers {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .footers hr {
+    margin: 2rem 0;
+  }
+  
+
+  
