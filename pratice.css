@@ -50,7 +50,7 @@
         border: 3px solid orange;
         border-radius: 5px;
         background: transparent;
-       color:black;
+       color:azure;
         text-decoration: none;
         margin: 50px auto 0;
         padding: 12px 20px;
@@ -64,6 +64,7 @@
     .home-content button:hover
     {
      transform: scale(1.80);
+     color:whitesmoke;
     }
     span
     {
